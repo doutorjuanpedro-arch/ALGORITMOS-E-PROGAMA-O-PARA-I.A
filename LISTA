@@ -1,0 +1,107 @@
+produtos = ["arroz", "feijão", "açúcar", "café"]
+print(produtos)
+print(type(produtos))
+
+print(produtos[0])
+print(type(produtos[0]))
+
+print(produtos[-2])
+print(len(produtos))
+
+print(produtos[1:3])
+print(produtos[1:])
+print(produtos[:3])
+
+dados = ["x", 10, 2.71, True, False]
+print(type(dados[3]))
+dados[3] = False
+print(dados)
+
+produtos.append("macarrão")
+print(produtos)
+
+produtos.remove("açúcar")
+print(produtos)
+
+numeros = [9, 4, 6, 2]
+numeros.sort()
+numeros.reverse()
+print(numeros)
+
+print(numeros.pop())
+print(numeros)
+
+tupla_numeros = (2, 2, 7, 9)
+print(tupla_numeros)
+print(type(tupla_numeros))
+print(tupla_numeros[2])
+
+# tupla_numeros[0] = 456
+
+tupla_unica = (8,)
+print(len(tupla_unica))
+
+estrutura_dados = [[("bom", "dia"), "programação"], 4, 5, (6, 7)]
+print(len(estrutura_dados))
+print(len(estrutura_dados[0]))
+print(estrutura_dados[0][1])
+print(estrutura_dados[0][0][1])
+print(estrutura_dados[3][1])
+
+matriz = [[1, 0], [0, 1]]
+print(matriz[0][1])
+
+texto_1 = "bom"
+texto_2 = " dia"
+texto_1 = texto_1 + texto_2
+print(texto_1)
+
+numeros_lista = [4, 5, 6]
+outra_lista = numeros_lista
+numeros_lista.append(7)
+print(outra_lista)
+
+palavra_1 = "bom"
+palavra_2 = " dia"
+copia_palavra = palavra_1
+palavra_1 = palavra_1 + palavra_2
+print(copia_palavra)
+
+estudante = {
+    "Nome": "Carlos Souza",
+    "idade": 22,
+    "altura": 1.75
+}
+
+print(type(estudante))
+print(estudante["Nome"])
+print(estudante["idade"])
+print(estudante.keys())
+print(estudante.values())
+
+
+def magia():
+    print("++++++++++++++++")
+    print("surgiu uma estrela")
+    print("++++++++++++++++")
+
+
+print("acabou!")
+magia()
+print("continua...")
+magia()
+
+
+def adicionar(valor_1, valor_2):
+    return valor_1 + valor_2
+
+
+resultado = adicionar(4, 8)
+print(resultado)
+
+
+resultado = magia()
+print(resultado)
+
+
+def inverter(valor_1, valor_2):
